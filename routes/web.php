@@ -39,14 +39,8 @@ Route::middleware(['auth', 'verificar.rol:alumno'])->group(function () {
     Route::post('/perfil', [PerfilController::class, 'store'])->name('perfil.store');
 
     // Ver perfil (mi perfil)
-    Route::get('/mi-perfil', function () {
-        $perfil = auth()->user()->perfil;
 
-        if (!$perfil) {
-            return redirect()->route('perfil.create')->with('error', 'Primero completá tu perfil.');
-        }
-        return view('alumno.mi-perfil', compact('perfil'));
-    })->name('perfil.show');
+Route::get('/mi-perfil', [PerfilController::class, 'show'])->name('perfil.show');
 
     // Editar perfil
     Route::get('/perfil/editar', [PerfilController::class, 'edit'])->name('perfil.edit');

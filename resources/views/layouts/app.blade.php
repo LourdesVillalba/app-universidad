@@ -12,7 +12,15 @@
 
     <header class="bg-gray-100 shadow fixed w-full z-20 top-0 left-0 border-b border-gray-300">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-        <a href="/" class="text-2xl font-bold text-gray-700">EduView</a>
+        <a href="
+            @auth
+                {{ auth()->user()->role === 'alumno' ? route('alumno.dashboard') : route('profesor.dashboard') }}
+            @else
+                /
+            @endauth
+        " class="text-2xl font-bold text-gray-700">
+            EduView
+        </a>
 
         <nav class="flex items-center gap-4">
             @auth
@@ -45,7 +53,7 @@
         @yield('content')
     </main>
 
-    <!-- Footer 
+    <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
         <div class="max-w-screen-xl mx-auto p-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
             <span>© {{ date('Y') }} <strong>EduView</strong>. Todos los derechos reservados.</span>
@@ -54,7 +62,7 @@
                 <a href="#" class="hover:text-blue-600">Términos</a>
             </div>
         </div>
-    </footer>-->
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 </body>

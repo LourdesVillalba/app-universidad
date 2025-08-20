@@ -82,4 +82,17 @@ public function update(Request $request)
 
     return redirect()->route('perfil.show')->with('success', 'Perfil actualizado correctamente.');
 }
+// En tu archivo PerfilController.php
+
+public function show()
+{
+    // Lógica que estaba en tu archivo de rutas
+    $perfil = auth()->user()->perfil;
+
+    if (!$perfil) {
+        return redirect()->route('perfil.create')->with('error', 'Primero completá tu perfil.');
+    }
+
+    return view('alumno.mi-perfil', compact('perfil'));
+}
 }
