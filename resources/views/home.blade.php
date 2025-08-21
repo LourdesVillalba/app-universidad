@@ -3,7 +3,7 @@
 @section('title', 'Inicio')
 
 @section('content')
-    <section class="bg-gray-50 flex items-center justify-center min-h-[calc(100vh-140px)]">
+    <section class="bg-gray-50 flex items-center justify-center min-h-screen">
         <div class="max-w-4xl mx-auto px-6 py-12 text-center">
             <h1 class="text-5xl lg:text-6xl font-extrabold mb-4 text-gray-800">
                 Bienvenido a <span class="text-teal-200">EduView</span>

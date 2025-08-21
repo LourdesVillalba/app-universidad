@@ -3,7 +3,7 @@
 @section('title', 'Registrar')
 
 @section('content')
-<div class="h-full flex items-center justify-center px-4">
+<div class="h-full flex items-center justify-center px-4 py-8">
     <div class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md">
         <div class="px-6 py-6">
             {{-- Logo --}}

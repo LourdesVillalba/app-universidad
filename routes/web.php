@@ -6,7 +6,7 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProfesorController;
 
-// Eliminamos el home si ya no lo usás
+
 Route::get('/', function () {
    return view('home');
 })->name('home');
