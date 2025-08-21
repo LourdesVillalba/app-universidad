@@ -38,13 +38,19 @@
                            focus:border-teal-400 focus:ring focus:ring-teal-300 focus:ring-opacity-40 focus:outline-none">
             </div>
 
-            {{-- DNI --}}
-            <div>
-                <label for="dni" class="block text-gray-700 text-sm font-bold mb-1">DNI</label>
-                <input type="text" id="dni" name="dni" placeholder="DNI" required
-                    class="block w-full px-4 py-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg 
-                           focus:border-teal-400 focus:ring focus:ring-teal-300 focus:ring-opacity-40 focus:outline-none">
-            </div>
+{{-- DNI --}}
+<div>
+    <label for="dni" class="block text-gray-700 text-sm font-bold mb-1">DNI</label>
+    <input type="text" id="dni" name="dni" placeholder="DNI" required
+        value="{{ old('dni') }}"
+        class="block w-full px-4 py-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg 
+               focus:border-teal-400 focus:ring focus:ring-teal-300 focus:ring-opacity-40 focus:outline-none">
+
+    @error('dni')
+        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+    @enderror
+</div>
+
 
             {{-- Carrera --}}
             <div>

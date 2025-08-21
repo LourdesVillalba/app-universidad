@@ -12,6 +12,9 @@
             <p class="text-lg lg:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
                 Este es tu panel de profesor. Desde aquí podés acceder a tus funcionalidades.
             </p>
+            <div class="mb-10">
+                <img src="{{ asset('images/usuarios.jpeg') }}" alt="Imagen bienvenida" class="mx-auto w-64 h-auto rounded-lg shadow-lg">
+            </div>
             <a href="{{ route('profesor.alumnos') }}"
                class="px-8 py-4 text-lg font-semibold rounded-lg bg-teal-500 text-white shadow-md hover:bg-teal-400 transition">
                 Ver lista de alumnos

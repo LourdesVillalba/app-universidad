@@ -33,7 +33,7 @@
 
         {{-- Tabla --}}
         <table class="max-w-5xl mx-auto w-full text-sm text-left text-gray-700">
-            <thead class="text-xs text-gray-600 uppercase bg-gray-100">
+            <thead class="text-base text-gray-600 uppercase bg-gray-100">
                 <tr>
                     <th scope="col" class="px-6 py-3">Foto</th>
                     <th scope="col" class="px-6 py-3">Nombre completo</th>
