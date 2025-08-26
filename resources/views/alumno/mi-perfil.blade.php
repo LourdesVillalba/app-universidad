@@ -35,10 +35,9 @@
                 <p class="text-gray-600 flex items-center">
                     <span class="mr-2 text-green-500"><i class="fab fa-whatsapp"></i></span><strong>WhatsApp:</strong>
                     @if($perfil->telefono)
-                        <a href="https://wa.me/{{ preg_replace('/\D/', '', $perfil->telefono) }}"
-                           class="text-teal-600 hover:underline ml-2" target="_blank">
-                            {{ $perfil->telefono }}
-                        </a>
+                    <span class="text-gray-600 ml-2">
+                        {{ $perfil->telefono }}
+                    </span>
                     @else
                         <span class="ml-2">No cargado</span>
                     @endif
