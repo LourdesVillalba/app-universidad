@@ -54,3 +54,9 @@ El proyecto sigue la estructura estándar de Laravel:
     php artisan migrate
     php artisan migrate --seed
     ```
+    
+---
+
+##  Vistas 
+Inicio
+<img width="1910" height="908" alt="Inicio" src="https://github.com/user-attachments/assets/a034362c-44d1-4b05-b4ec-fcb382093904" />
