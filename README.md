@@ -1,4 +1,4 @@
-# Actividad Aplicactivo Docente-Alumnos
+# Actividad Aplicación Docente-Alumnos
 
 Desarrollar una aplicación web en Laravel 12 con base de datos MySQL, que gestione
 usuarios con autenticación y roles simples (docente/administrador y alumno).
@@ -89,11 +89,11 @@ El proyecto sigue la estructura estándar de Laravel:
 
 ### Inicio (Vista Alumno)
 
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/2bd2b6ad-c118-41fb-a9f1-770b7d99921a" />
+
+### Perfil Alumno (Vista Alumno)
+
 <img width="1912" height="907" alt="image" src="https://github.com/user-attachments/assets/22de1e93-06c7-4aa9-a7cc-656732bc9301" />
-
-### Perfil Alumno
-
-<img width="1915" height="902" alt="image" src="https://github.com/user-attachments/assets/236d6245-6818-4280-875a-43024bdd7216" />
 
 ### Editar perfil (Vista Alumno)
 
