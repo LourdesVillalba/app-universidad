@@ -1,3 +1,16 @@
+# Actividad Aplicación Docente-Alumnos
+
+Desarrollar una aplicación web en Laravel 12 con base de datos MySQL, que gestione
+usuarios con autenticación y roles simples (docente/administrador y alumno).
+
+## Integrantes (Grupo 4)
+- Gamarra Matias
+- Justiniano Max
+- Mora Sebastian
+- Villalba Lourdes
+
+---
+
 #  EduView
 
 EduView es una aplicación web desarrollada en **Laravel** para la gestión de **perfiles de alumnos y usuarios**.  
@@ -76,11 +89,11 @@ El proyecto sigue la estructura estándar de Laravel:
 
 ### Inicio (Vista Alumno)
 
-<img width="1895" height="903" alt="image" src="https://github.com/user-attachments/assets/8564b73a-8392-4e7c-b578-91eb4681396c" />
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/2bd2b6ad-c118-41fb-a9f1-770b7d99921a" />
 
 ### Perfil Alumno (Vista Alumno)
 
-<img width="1915" height="902" alt="image" src="https://github.com/user-attachments/assets/236d6245-6818-4280-875a-43024bdd7216" />
+<img width="1912" height="907" alt="image" src="https://github.com/user-attachments/assets/22de1e93-06c7-4aa9-a7cc-656732bc9301" />
 
 ### Editar perfil (Vista Alumno)
 
@@ -92,7 +105,7 @@ El proyecto sigue la estructura estándar de Laravel:
 
 ### Lista de perfiles (Vista Profesor)
 
-<img width="1897" height="885" alt="image" src="https://github.com/user-attachments/assets/7152e27e-fa29-4925-9dfb-4588a13ec682" />
+<img width="1900" height="906" alt="image" src="https://github.com/user-attachments/assets/9389f147-3c78-412e-b5bc-7de98d5e5ae2" />
 
 ### Perfil Alumno (Vista Profesor)
 
