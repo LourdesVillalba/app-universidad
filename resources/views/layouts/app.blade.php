@@ -50,8 +50,24 @@
 
 
     <main class="flex-grow pt-24 pb-12">
+
+        {{--  Mensajes flash --}}
+        @if(session('success'))
+            <div class="max-w-3xl mx-auto mb-6 p-4 bg-green-100 border border-green-300 text-green-800 rounded-lg shadow">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        @if(session('error'))
+            <div class="max-w-3xl mx-auto mb-6 p-4 bg-red-100 border border-red-300 text-red-800 rounded-lg shadow">
+                {{ session('error') }}
+            </div>
+        @endif
+
+        {{-- Contenido de cada vista --}}
         @yield('content')
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">

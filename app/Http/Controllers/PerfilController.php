@@ -11,6 +11,13 @@ class PerfilController extends Controller
 {
     public function store(Request $request)
 {
+    // Verificar si ya tiene perfil
+    if (auth()->user()->perfil) {
+        return redirect()
+            ->route('perfil.show')
+            ->with('error', ' Ya tenés un perfil creado. No podés crear otro.');
+    }
+
     $data = $request->validate([
         'nombre' => 'required|string',
         'apellido' => 'required|string',

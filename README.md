@@ -78,7 +78,7 @@ El proyecto sigue la estructura estándar de Laravel:
 
 <img width="1895" height="903" alt="image" src="https://github.com/user-attachments/assets/8564b73a-8392-4e7c-b578-91eb4681396c" />
 
-### Perfil Alumno
+### Perfil Alumno (Vista Alumno)
 
 <img width="1915" height="902" alt="image" src="https://github.com/user-attachments/assets/236d6245-6818-4280-875a-43024bdd7216" />
 
