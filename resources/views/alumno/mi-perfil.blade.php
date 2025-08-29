@@ -55,7 +55,7 @@
                 <p class="text-gray-600 flex items-center">
                     <span class="mr-2 text-gray-800"><i class="fab fa-github"></i></span><strong>GitHub:</strong>
                     @if($perfil->github)
-                        <a href="https://github.com/{{ $perfil->github }}" class="text-teal-600 hover:underline ml-2" target="_blank">
+                        <a href="{{ $perfil->github }}" class="text-teal-600 hover:underline ml-2" target="_blank">
                             Ver perfil
                         </a>
                     @else
