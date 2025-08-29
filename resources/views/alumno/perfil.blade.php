@@ -116,7 +116,7 @@
             <div class="mt-4">
                 <label class="block font-semibold text-gray-700 mb-2">Foto de perfil</label>
                 <div id="dropzone-container" class="relative w-48 h-48 rounded-full overflow-hidden border-2 border-dashed border-gray-300 cursor-pointer mx-auto">
-                    <input id="dropzone-perfil" type="file" name="foto" class="absolute inset-0 opacity-0 cursor-pointer z-10" />
+                    <input id="dropzone-perfil" type="file" name="foto" required class="absolute inset-0 opacity-0 cursor-pointer z-10" />
                     
                     {{-- Placeholder --}}
                     <div id="placeholder" class="absolute inset-0 flex flex-col items-center justify-center text-center bg-gray-50 hover:bg-gray-100 transition">
@@ -130,6 +130,10 @@
                     {{-- Vista previa de la imagen --}}
                     <img id="foto-preview" src="#" alt="Vista previa de la foto" class="hidden absolute inset-0 w-full h-full object-cover" />
                 </div>
+                    {{-- Mostrar error --}}
+                @error('foto')
+                    <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                @enderror
             </div>
         </div>
 
@@ -164,8 +168,10 @@
     });
 
     // Permite hacer clic en la vista previa para cambiar la imagen
-    dropzoneContainer.addEventListener('click', function() {
-        inputFile.click();
+    dropzoneContainer.addEventListener('click', function(e) {
+        if (e.target !== inputFile) {
+            inputFile.click();
+        }
     });
 </script>
 

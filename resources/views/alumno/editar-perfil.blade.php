@@ -171,8 +171,10 @@
     });
 
     // Permite hacer clic en la vista previa para cambiar la imagen
-    dropzoneContainer.addEventListener('click', function() {
-        inputFile.click();
+    dropzoneContainer.addEventListener('click', function(e) {
+        if (e.target !== inputFile) {
+            inputFile.click();
+        }
     });
 </script>
 

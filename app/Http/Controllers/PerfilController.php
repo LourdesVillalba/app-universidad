@@ -28,7 +28,7 @@ class PerfilController extends Controller
         'telefono' => 'nullable|string',
         'linkedin' => 'nullable|url',
         'github' => 'nullable|string',
-        'foto' => 'nullable|image|max:2048',
+        'foto' => 'required|image|max:2048',
     ]);
 
     // Guardar la imagen
